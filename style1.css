@@ -96,7 +96,7 @@ label #cancel {
     align-items: flex-start;
     display: flex;
     height: 11.05rem;
-    left: 30rem;
+    left: 20rem;
     position: absolute;
     top: 5rem;
     width: 80%;
@@ -108,7 +108,7 @@ label #cancel {
     justify-content: center;
     letter-spacing: -0.03rem;
     line-height: 1.5;
-    margin-right: 29.5rem;
+    margin-right: 31.5rem;
     white-space: nowrap;
 }
 .introduction .name-title .hello {
