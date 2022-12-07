@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <title>Aushdam Website</title>
+    </head>
+
+    <body>
+        
+        <header>
+                <img src="/images/Logo-1.jpg" alt="logo" class="aushadam-logo">
+
+                <nav>
+                    <ul>
+                        <li><a href="#">New Patient</a></li>
+                        <li><a href="#">Patient List</a></li>
+                        <li><a href="#">Doctors</a></li>
+                    </ul>
+                </nav>
+        </header>
+
+        <h2>New Patient Details</h2>
+        <div class="container">
+            <!----<div class="title">New Patient details</div> -->
+            <form action="#">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Patient Name</span>
+                        <input type="text" placeholder="Enter patient name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Age</span>
+                        <input type="text" placeholder="Enter Age" required>
+                    </div>
+                    
+                    <div class="input-box">
+                        <span class="details">Department</span>
+                        <input type="text" placeholder="Select Department" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Unit</span>
+                        <input type="text" placeholder="Enter Unit" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Date</span>
+                        <input type="text" placeholder="Enter Date" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Start time</span>
+                        <input type="text" placeholder="Enter Start time" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone number</span>
+                        <input type="text" placeholder="Enter Phone number" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Address</span>
+                        <input type="text" placeholder="Address" required>
+                    </div>
+                </div>
+                <div class="gender-details">
+                    <input type="radio" name="gender" id="dot-1">
+                    <input type="radio" name="gender" id="dot-2">
+                    <input type="radio" name="gender" id="dot-3">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label for="dot-1">
+                            <span class="dot one"></span>
+                            <span class="gender">Male</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two"></span>
+                            <span class="gender">Female</span>
+                        </label>
+                        <label for="dot-3">
+                            <span class="dot three"></span>
+                            <span class="gender">Others</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Send to Dept.">
+                </div>
+            </form>
+        </div>
+
+    </body>
+</html>

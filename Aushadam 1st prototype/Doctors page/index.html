@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Doctors Appointment page</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <input type="checkbox" id="check">
+      <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+      </label>
+    <div class="sidebar">
+      <header>Dr. Anirudh</header>
+        <ul>
+          <li><a href="#"><i class="fas fa-qrcode"></i>Dashboard</a></li>
+          <li><a href="#"><i class="fas fa-file-medical"></i>Patient List</a></li>
+          <li><a href="#"><i class="fas fa-comment-alt"></i>Chat</a></li>
+          <li><a href="#"><i class="fas fa-edit"></i>Blogs</a></li>
+          <li><a href="#"><i class="fas fa-chart-line"></i>Finances</a></li>
+          <li><a href="#"><i class="fas fa-user-edit"></i>Update Profile</a></li>
+          <li><a href="#"><i class="fas fa-tools"></i>Settings</a></li>
+          <li><a href="#"><i class="fas fa-sign-out-alt"></i>Sign out</a></li>
+          </ul>
+    </div>
+
+        <section class="patient-details">
+          <h2>New Pateint details</h2>
+          <div class="container">
+            <form action="#">
+              <div class="user-details">
+                  <div class="input-box">
+                      <span class="details">Patient Name</span>
+                      <input type="text" placeholder="Enter patient name" required>
+                  </div>
+                  <div class="input-box">
+                      <span class="details">Age</span>
+                      <input type="text" placeholder="Enter Age" required>
+                  </div>
+                  
+                  <div class="input-box">
+                      <span class="details">Department</span>
+                      <input type="text" placeholder="Select Department" required>
+                  </div>
+                  <div class="input-box">
+                      <span class="details">Unit</span>
+                      <input type="text" placeholder="Enter Unit" required>
+                  </div>
+                  <div class="input-box">
+                      <span class="details">Date</span>
+                      <input type="text" placeholder="Enter Date" required>
+                  </div>
+                  <div class="input-box">
+                      <span class="details">Start time</span>
+                      <input type="text" placeholder="Enter Start time" required>
+                  </div>
+                  <div class="input-box">
+                      <span class="details">Phone number</span>
+                      <input type="text" placeholder="Enter Phone number" required>
+                  </div>
+                  <div class="input-box">
+                      <span class="details">Address</span>
+                      <input type="text" placeholder="Address" required>
+                  </div>
+              </div>
+              <div class="gender-details">
+                  <input type="radio" name="gender" id="dot-1">
+                  <input type="radio" name="gender" id="dot-2">
+                  <input type="radio" name="gender" id="dot-3">
+                  <span class="gender-title">Gender</span>
+                  <div class="category">
+                      <label for="dot-1">
+                          <span class="dot one"></span>
+                          <span class="gender">Male</span>
+                      </label>
+                      <label for="dot-2">
+                          <span class="dot two"></span>
+                          <span class="gender">Female</span>
+                      </label>
+                      <label for="dot-3">
+                          <span class="dot three"></span>
+                          <span class="gender">Others</span>
+                      </label>
+                  </div>
+              </div>
+           </form>
+         </div>
+        </section>
+
+        <section class="doctor-notes">
+          <div class="cheif_complaints-box">
+            <button type="submit">Cheif Complaints</button>
+            <textarea name="comment" placeholder="Type the cheif complaints of patient "></textarea>
+          </div>
+
+          <div class="history_of_present_illness-box">
+            <button type="submit">History of Present illness</button>
+            <textarea name="comment" placeholder="Type the cheif complaints of patient "></textarea>
+          </div>
+
+          <div class="past_history-box">
+            <button type="submit">Past History</button>
+            <textarea name="comment" placeholder="Type the cheif complaints of patient "></textarea>
+          </div>
+
+          <div class="systematic_examination-box">
+            <button type="submit">Systematic Examination</button>
+            <textarea name="comment" placeholder="Type the cheif complaints of patient "></textarea>
+          </div>
+
+          <div class="provisional_examination-box">
+            
+            <button type="submit">Provisional Examination</button>
+            <textarea name="comment" placeholder="Type the cheif complaints of patient "></textarea>
+          </div>
+
+          <div class="investigation_advised-box">
+            <button type="submit">Investigation Advised</button>
+            <!--- <textarea name="comment" placeholder="Type the cheif complaints of patient "></textarea> --->
+            <div id="menu">
+              <ul>
+                 <li>
+                  <!--- <input type="checkbox" id="btn"> --->
+                  <!--- <label for="btn"> --->
+                    <a href="#">Bio-Chemistry</a>
+                    <ul>
+                       <li><a href="#">FBS</a></li>
+                       <li><a href="#">PPBS</a></li>
+                       <li><a href="#">RBS</a></li>
+                       <li><a href="#">HbA1C</a></li>
+                       <li>
+                        <!---<input type="checkbox" id="btn-1">-->
+                          <!--- <label for="btn-1"> --->
+                          <a href="#">LFT</a>
+                              <ul>
+                                  <li><a href="#">Bilirubin Total</a></li>
+                                  <li><a href="#">Bilirubin Direct</a></li>
+                                  <li><a href="#">SGOT/ AST</a></li>
+                                  <li><a href="#">SGPT/ ALT</a></li>
+                              </ul>
+                          <!---</label> --->
+                          </li>
+                          <li>
+                             <a href="#">Lipid Profile</a>
+                             <ul>
+                                <li><a href="#">Total Cholestrol</a></li>
+                                <li><a href="#">HDL</a></li>
+                                <li><a href="#">LDL</a></li>
+                                <li><a href="#">Triglycerides</a></li>
+                              </ul>   
+                          </li>
+                          <li>
+                             <a href="#">Iron Profile</a>
+                             <ul>
+                                <li><a href="#">Iron</a></li>
+                                <li><a href="#">TBIC</a></li>
+                                <li><a href="#">Ferritin</a></li>
+                             </ul>
+                          </li>
+                    </ul>
+                  <!--- </label> --->
+                  </li>
+                  <!--- Pathology Menu -->
+                  <li>
+                       <!--- <input type="checkbox" id="btn"> --->
+                  <!--- <label for="btn"> --->
+                    <a href="#">Pathology</a>
+                    <ul>
+                       <li>
+                        <!---<input type="checkbox" id="btn-1">-->
+                          <!--- <label for="btn-1"> --->
+                          <a href="#">Hematology</a>
+                              <ul>
+                                  <li><a href="#">Complete Blood Count (CBC)</a></li>
+                                  <li><a href="#">Complete Blood Picture (CBP)</a></li>
+                                  <li><a href="#">Complete Hemogram</a></li>
+                                  <li><a href="#">Peripheral Smear</a></li>
+                                  <li><a href="#">Blood grouping and Rh type</a></li>
+                                  <li><a href="#">ESR</a></li>
+                                  <li><a href="#">Hemoglobin</a></li>
+                                  <li><a href="#">Platelet Count</a></li>
+                              </ul>
+                          <!---</label> --->
+                          </li>
+                          <li>
+                             <a href="#">Histopathology</a>
+                             <ul>
+                                <li><a href="#">Site of Biopsy</a></li>
+                                <li><a href="#">Nature of Specimen</a></li>
+                                <li><a href="#">Clinic details & Investigations</a></li>
+                                <li><a href="#">Interoperative Findings</a></li>
+                                <li><a href="#">Special Stains</a></li>
+                              </ul>   
+                          </li>
+                          <li>
+                             <a href="#">Urine</a>
+                             <ul>
+                                <li><a href="#">Complete Urine analysis</a></li>
+                                <li><a href="#">Routine examination</a></li>
+                                <li><a href="#">Ketone bodies</a></li>
+                             </ul>
+                          </li>
+                          <li>
+                              <a href="#">Body Fluids</a>
+                              <ul>
+                                 <li><a href="#">Pleural Fluid</a></li>
+                                 <li><a href="#">Pentoneal Fluid</a></li>
+                                 <li><a href="#">Bronchial washings</a></li>
+                              </ul>
+                           </li>
+                           <li>
+                              <a href="#">Pap Smear</a>
+                              <ul>
+                                 <li><a href="#">Cervical</a></li>
+                                 <li><a href="#">Vaginal</a></li>
+                                 <li><a href="#">Vault</a></li>
+                              </ul>
+                           </li>
+                    </ul>
+                  <!--- </label> --->            
+                  </li>
+                  <!--- Radiology dept -->
+                  <li>                
+                  <!--- <input type="checkbox" id="btn"> --->
+                  <!--- <label for="btn"> --->
+                    <a href="#">Radiology</a>
+                    <ul>
+                       <li><a href="#">X-Ray</a></li>
+                       <li><a href="#">Ultra Sound</a></li>
+                       <li><a href="#">CT- Scan</a></li>
+                       <li><a href="#">MRI</a></li>
+                       <li><a href="#">Mammography</a></li>
+                    </ul>
+                  <!--- </label> --->
+                  </li>
+              </ul>
+          </div> 
+        </div>
+
+
+        </section>
+
+
+    </body>
+
+</html>
