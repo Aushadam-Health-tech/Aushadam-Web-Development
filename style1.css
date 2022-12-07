@@ -1,0 +1,235 @@
+body {
+    /*background: #F4F4F9; */
+    background: #f4f4f9;
+    font-family: 'Inter', sans-serif ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+ /* Sidebar menu */
+.sidebar {
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #ffffff;
+    transition: all .5s ease;
+}
+.sidebar header {
+    font-size: 24px;
+    color: black;
+    background-color: #4985FF;
+    text-align: left;
+    padding-left: 5px;
+    line-height: 70px;
+    font-weight: 600;
+    user-select: none;
+}
+.sidebar ul a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    line-height: 60px;
+    color: #000000;
+    font-size: 18px;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+.sidebar ul li:hover a {
+    padding-left: 50px;
+    background-color: rgba(73, 133, 255, 0.2);
+}
+.sidebar ul a i {
+    margin-right: 15px;
+}
+#check {
+    display: none;
+}
+label #btn,label #cancel {
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius: 3px;
+}
+label #btn {
+    left: 20px;
+    top: 30px;
+    font-size: 20px;
+    color: white;
+    padding: 4px 8px;
+    transition: all .5s;
+}
+label #cancel {
+    z-index: 1;
+    left: -250px;
+    top: 25px;
+    font-size: 15px;
+    color: #0a5275;
+    margin-left: 30px;
+    padding: 2px 4px;
+    transition: all .5s ease;
+}
+#check:checked ~ .sidebar {
+    left: 0;
+}
+#check:checked ~ label #btn {
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel {
+    left: 200px;
+}
+ /* Sidebar menu  ENDS */
+
+/* Introduction of user */
+.introduction {
+    align-items: flex-start;
+    display: flex;
+    height: 11.05rem;
+    left: 30rem;
+    position: absolute;
+    top: 5rem;
+    width: 80%;
+}
+.introduction .name-title {
+    align-items: baseline;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    letter-spacing: -0.03rem;
+    line-height: 1.5;
+    margin-right: 29.5rem;
+    white-space: nowrap;
+}
+.introduction .name-title .hello {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: -0.03rem;
+    line-height: 1.5;
+}
+.introduction .name-title .user-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -0.03rem;
+    line-height: 1.5;
+    padding-left: 0.5rem;
+}
+.introduction .total-appointments {
+    align-items: center;
+    background-color: #84e9ff;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-top: 1rem;
+    padding: 0.45rem 1.7rem 0.5rem 1.7rem;
+}
+.introduction h4 {
+    display: flex;
+    flex-shrink: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    justify-content: center;
+    letter-spacing: -0.03rem;
+    line-height: 1.2125;
+    margin-bottom: 0.95rem;
+    white-space: nowrap;
+}
+.introduction .number {
+    display: flex;
+    flex-shrink: 0;
+    font-size: 2rem;
+    font-weight: 500;
+    justify-content: center;
+    letter-spacing: -0.054rem;
+    line-height: 1.2125;
+    white-space: nowrap;
+}
+
+ /* Features list */
+.notifications-tile {
+    position: relative;
+    overflow: hidden;
+    width: 220px;
+    height: 110px;
+    /*margin: 10px auto 15px;*/
+    left: 330px;
+    top: 286px;
+    background-color: #FCC0F2;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.15));
+    border-radius: 8px;
+}
+.notifications-tile span {
+	position: absolute;
+	bottom: 16px;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	color: #000000;
+	font-weight: 500;
+}
+
+.features-tile i {
+    font-size: 30px; 
+    color:#000000; 
+    padding: 25px 100px;
+}
+
+.personalized-plans-tile {
+    position: absolute;
+    overflow: hidden;
+    width: 220px;
+    height: 110px;
+    /*margin: 10px auto 15px;*/
+    left: 650px;
+    top: 286px;
+    background-color: #FE8F77;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.15));
+    border-radius: 8px;
+}
+.personalized-plans-tile span {
+	position: absolute;
+	bottom: 16px;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	color: #000000;
+	font-weight: 500;
+}
+
+.doctors_nearyou-tile {
+    position: absolute;
+    overflow: hidden;
+    width: 220px;
+    height: 110px;
+    /*margin: 10px auto 15px;*/
+    left: 970px;
+    top: 286px;
+    background-color: #ABFFA4;
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.15));
+    border-radius: 8px;
+}
+
+.doctors_nearyou-tile span {
+	position: absolute;
+	bottom: 16px;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 18px;
+	color: #000000;
+	font-weight: 500;
+}
